@@ -1,34 +1,26 @@
-Descriere
-Acesta este un proiect simplu care implementeaza jocul clasic "X si 0" (Tic-Tac-Toe) folosind limbajul de programare C. In acest joc, jucatorul se confrunta cu computerul, iar cine incepe este decis prin aruncarea unui zar. Jucatorul poate alege sa joace cu "X" sau "0", iar restul jocului se desfasoara pe rand, fiecare alegand o pozitie pe tabla de joc.
+Description
+This is a simple project that implements the classic "X and 0" (Tic-Tac-Toe) game using the C programming language. In this game, the player competes against the computer, and who starts is decided by a dice roll. The player can choose to play with "X" or "0", and the rest of the game is played in turns, with each side selecting a position on the game board.
 
-Functionalitati
-Decizia cine incepe: Atat jucatorul, cat si computerul arunca un zar, iar cel cu numarul mai mare incepe.
-Alegerea simbolului: Jucatorul alege daca joaca cu "X" sau "0" daca incepe el, iar computerul primeste simbolul opus.
-Tabla interactiva: Mutarile sunt introduse de jucator (linie si coloana), iar tabla este actualizata dupa fiecare tur.
-Computerul joaca aleatoriu: Computerul isi alege pozitia libera in mod aleator.
-Castigator: Jocul detecteaza automat cand unul dintre jucatori castiga si afiseaza rezultatul.
+Features
+Deciding who starts: Both the player and the computer roll a dice, and the one with the higher number starts.
+Symbol selection: The player chooses whether to play with "X" or "0" if they start, and the computer gets the opposite symbol.
+Interactive board: The player's moves are entered (row and column), and the board is updated after each turn.
+Computer plays randomly: The computer chooses a random free position.
+Winner detection: The game automatically detects when one of the players wins and displays the result.
 
-Cum sa rulezi jocul
-
-Compilare: Foloseste un compilator C pentru a compila codul. De exemplu, folosind gcc:
+How to run the game
+Compilation: Use a C compiler to compile the code. For example, using gcc:
 gcc -o tic_tac_toe tic_tac_toe.c
 ./tic_tac_toe
 
-
-Cum se joaca
-Aruncarea zarului: La inceput, jucatorul si computerul arunca zarul pentru a decide cine incepe. Daca zarul jucatorului este mai mare, acesta incepe.
-
-Alegerea simbolului: Daca jucatorul incepe, el poate alege daca joaca cu "X" sau "0". Daca incepe computerul, simbolul este ales aleatoriu.
-
-Mutari: Jucatorul alege linia si coloana unde vrea sa puna simbolul. Tabla este actualizata si urmeaza mutarea computerului.
-
-Castigatorul: Dupa fiecare mutare, jocul verifica daca cineva a castigat. Jocul continua pana cand unul dintre jucatori castiga sau tabla se umple.
-
-Scorul: Dupa ce un joc se incheie, scorul este actualizat si poti alege daca vrei sa mai joci o runda.
-
-Structura codului
-Functii principale
-firstPick(): Decide cine incepe jocul printr-o aruncare de zar.
-choice(): Alege simbolul "X" sau "0" in functie de cine incepe.
-game(): Functia care ruleaza logica jocului, alternand intre jucator si computer.
-main(): Initializarea jocului si controlul buclei de joc (ofera optiunea de a juca din nou).
+How to play
+Dice roll: At the beginning, the player and the computer roll a dice to decide who starts. If the player rolls a higher number, they go first.
+Symbol selection: If the player starts, they choose whether to play with "X" or "0". If the computer starts, the symbol is selected randomly.
+Making moves: The player selects the row and column where they want to place their symbol. The board is updated, and then the computer makes its move.
+Winner detection: After each move, the game checks if there is a winner. The game continues until a player wins or the board is full.
+Score: After the game ends, the score is updated and the player is asked if they want to play again.
+Code structure
+firstPick(): Decides who starts the game by rolling a dice.
+choice(): Determines the symbol ("X" or "0") based on who starts.
+game(): Contains the main logic of the game, alternating between the player and the computer.
+main(): Initializes the game and controls the main loop, providing the option to play again.
